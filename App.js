@@ -2,10 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
+    clickMe() {
+        console.log("调试");
+    }
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello World!12</Text>
+        <Text onPress={this.clickMe}>Hello World!1234</Text>
       </View>
     );
   }
